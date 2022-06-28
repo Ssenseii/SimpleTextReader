@@ -1,6 +1,6 @@
 /// Changes to be made: 
 
-  -Add Accebility Mode
-  -Add Dark/Light Theme
-  -Add change font size
+  -Add Accebility Mode\n
+  -Add Dark/Light Theme\n
+  -Add change font size\n
  
