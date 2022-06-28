@@ -1,0 +1,10 @@
+#progressBar {
+    --scrollAmount: 0%;
+    width: var(--scrollAmount);
+    height: 4px;
+    position: fixed; //scroll with the page
+
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+
+

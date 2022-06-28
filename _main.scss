@@ -1,0 +1,29 @@
+.main{
+    padding: 10rem 30rem;
+    font-size: 24px;
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 300;
+    text-align: left;
+    line-height: 32px;
+    
+}
+
+@media screen and (max-width: 1500px) {
+    
+    .main{
+        padding: 10rem 10rem;
+        font-size: 32px;
+        line-height: 48px;
+    }
+
+}   
+
+@media screen and (max-width: 700px) {
+    
+    .main{
+        padding: 3rem;
+        font-size: 24px;
+        line-height: 48px;
+    }
+
+}   

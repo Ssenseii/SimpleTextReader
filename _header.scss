@@ -1,0 +1,49 @@
+.header{
+    padding-top: 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    &__title{
+        align-self: center;
+        font-family: 'Public Sans', sans-serif;
+        font-weight: 100;
+        font-size: 48px;
+    
+    }
+}
+
+.border{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+
+    &__line{
+        
+    width: 46rem;
+    height: 2px;
+    background-color: black;
+    }
+}
+
+
+@media screen and (max-width: 1500px) {
+    
+    .header__title{
+        font-size: 72px;
+    }
+
+}   
+
+@media screen and (max-width: 700px) {
+    
+    .heqder__title{
+        font-size: 48px;
+    }
+
+    
+    .border{
+        visibility: hidden;
+    }
+}   
