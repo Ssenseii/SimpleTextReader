@@ -1,83 +1,99 @@
-.header{
+.header {
     padding-top: 8rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
 
-    &__title{
+    &__title {
         align-self: center;
-        font-family: 'Public Sans', sans-serif;
+        font-family: "Public Sans", sans-serif;
         font-weight: 100;
         font-size: 48px;
         margin-bottom: 6rem;
-        
     }
 
-    &__access{
+    &__access {
         width: 100%;
-        position: fixed;
-        
-        &-button{
-            padding: 1rem 1rem;
-            width: 10rem;
-            float: right;
-            display: flex;
-            justify-content: right;
-            position: relative;
-            margin-right: 2rem;
+        position: relative;
 
-            font-family: 'Public Sans', sans-serif;
+        &-button {
+            padding: 1rem;
+            width: 10rem;
+            position: relative;
+
+            font-family: "Public Sans", sans-serif;
             font-weight: 200;
             font-size: 16px;
 
             color: rgb(102, 102, 102);
 
             background-color: white;
-            border: 1px solid #000;
+            border: 1px solid rgb(102, 102, 102);;
             border-radius: 20px;
 
-            &:hover{
+            &:hover {
                 cursor: pointer;
                 font-weight: 400;
                 color: #000;
                 border: 1px solid #000;
             }
+
+            &:focus{
+                width: 16rem;
+                border-bottom-left-radius: 0;
+                border-bottom-right-radius: 0;
+                border-bottom: none;
+                transition: all 0.1s;
+            }
+        }
+
+        &-content {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            border: 1px solid rgb(102, 102, 102);
+
+            
+            border-top: none;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            width: 16rem;
+            padding: 1rem;
+            z-index: 1;
         }
 
     }
 }
 
-.border{
+.show{
+    display: block;
+}
+
+.border {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 2rem;
 
-    &__line{
-        
-    width: 46rem;
-    height: 2px;
-    background-color: black;
+    &__line {
+        width: 46rem;
+        height: 2px;
+        background-color: black;
     }
 }
 
-
 @media screen and (max-width: 1500px) {
-    
-    .header__title{
+    .header__title {
         font-size: 72px;
     }
-
-}   
+}
 
 @media screen and (max-width: 700px) {
-    
-    .header__title{
+    .header__title {
         font-size: 48px;
     }
 
-    
-    .border{
+    .border {
         visibility: hidden;
     }
-}   
+}
