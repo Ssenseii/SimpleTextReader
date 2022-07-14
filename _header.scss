@@ -1,7 +1,7 @@
 .header{
     padding-top: 8rem;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
 
     &__title{
@@ -9,7 +9,41 @@
         font-family: 'Public Sans', sans-serif;
         font-weight: 100;
         font-size: 48px;
-    
+        margin-bottom: 6rem;
+        
+    }
+
+    &__access{
+        width: 100%;
+        position: fixed;
+        
+        &-button{
+            padding: 1rem 1rem;
+            width: 10rem;
+            float: right;
+            display: flex;
+            justify-content: right;
+            position: relative;
+            margin-right: 2rem;
+
+            font-family: 'Public Sans', sans-serif;
+            font-weight: 200;
+            font-size: 16px;
+
+            color: rgb(102, 102, 102);
+
+            background-color: white;
+            border: 1px solid #000;
+            border-radius: 20px;
+
+            &:hover{
+                cursor: pointer;
+                font-weight: 400;
+                color: #000;
+                border: 1px solid #000;
+            }
+        }
+
     }
 }
 
@@ -17,7 +51,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 4rem;
+    margin-top: 2rem;
 
     &__line{
         
