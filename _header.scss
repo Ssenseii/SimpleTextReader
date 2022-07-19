@@ -15,7 +15,6 @@
     &__access {
         width: 90%;
         position: fixed;
-        border: 1px solid red;
         margin-left: 2rem;
         
 
@@ -35,6 +34,7 @@
             background-color: white;
             border: 1px solid rgb(102, 102, 102);;
             border-radius: 20px;
+            margin-bottom: 1rem;
 
             &:hover {
                 cursor: pointer;
@@ -43,25 +43,16 @@
                 border: 1px solid #000;
             }
 
-            &:focus{
-                width: 16rem;
-                border-bottom-left-radius: 0;
-                border-bottom-right-radius: 0;
-                border-bottom: none;
-                transition: all 0.1s;
-            }
         }
 
         &-content {
             display: none;
             position: absolute;
             background-color: #fff;
-            border: 1px solid rgb(102, 102, 102);
 
+            border: 1px solid rgb(102, 102, 102);
+            border-radius: 20px;
             
-            border-top: none;
-            border-bottom-left-radius: 20px;
-            border-bottom-right-radius: 20px;
             width: 16rem;
             padding: 1rem;
             z-index: 1;
