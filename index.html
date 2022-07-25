@@ -33,6 +33,10 @@
         <link rel="stylesheet" href="dist/style.css" />
     </head>
     <body>
+
+        <div id="bg">
+
+        
         <div id="progressBar"></div>
         <header class="header">
             <h1 class="header__title">The Swan</h1>
@@ -50,10 +54,10 @@
                         <div class="access__background">
                             <div class="access__background-title">Background Color</div>
                             <div class="access__background-button">
-                                <button class="access__background-button-white"></button>
-                                <button class="access__background-button-skin"></button>
-                                <button class="access__background-button-gray"></button>
-                                <button class="access__background-button-black"></button>
+                                <button onclick="return BGwhite()" id="white" class="access__background-button-white"></button>
+                                <button onclick="return BGskin()" id="skin" class="access__background-button-skin"></button>
+                                <button onclick="return BGgray()" id="gray" class="access__background-button-gray"></button>
+                                <button onclick="return BGblack()" id="black" class="access__background-button-black"></button>
                             </div>
                         </div>
                         <div class="access__luminosity"></div>
@@ -869,6 +873,7 @@
                 <br />
             </div>
         </main>
+        
 
         <footer>
             <a
