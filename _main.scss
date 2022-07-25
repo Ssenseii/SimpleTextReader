@@ -1,6 +1,7 @@
 .main{
     padding: 10rem 30rem;
-    font-size: 24px;
+    --fontsize: 24px;
+    font-size: var(--fontsize);
     font-family: 'Public Sans', sans-serif;
     font-weight: 300;
     text-align: left;

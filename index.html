@@ -21,14 +21,15 @@
             sizes="16x16"
             href="images/favicon-16x16.png"
         />
-        <link rel="manifest" href="/site.webmanifest" />
         <title>"The Swan" by Roald Dahl</title>
+
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
             href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;200;300;400&display=swap"
             rel="stylesheet"
         />
+
         <link rel="stylesheet" href="dist/style.css" />
     </head>
     <body>
@@ -36,14 +37,14 @@
         <header class="header">
             <h1 class="header__title">The Swan</h1>
             <div class="header__access">
-                <button onclick="accessibility()" class="header__access-button">Accessibility Options</button>
+                <button onclick="return accessibility()" class="header__access-button">Accessibility Options</button>
                 
                 <div id="dropdown" class="header__access-content">
                         <div class="access__fontsize">
                             <div class="access__fontsize-title"><p>Font Size</p></div>
                             <div class="access__fontsize-button">
-                                <button class="access__fontsize-button-up">smaller</button>
-                                <button class="access__fontsize-button-down">bigger</button>
+                                <button id="down" class="access__fontsize-button-up">smaller</button>
+                                <button id="up" class="access__fontsize-button-down">bigger</button>
                             </div>
                         </div>
                         <div class="access__BG"></div>
@@ -56,7 +57,7 @@
             <div class="border__line"></div>
         </div>
 
-        <main class="main">
+        <main id="text" class="main">
             <div class="main__text">
                 Ernie had been given a .22-caliber rifle for his birthday.
                 <br /><br />

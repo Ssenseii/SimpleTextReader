@@ -70,7 +70,7 @@
         padding-left: 1rem;
 
         &-title{
-            margin-bottom: 1rem;
+            margin-bottom: 8px;
         }
         
         &-button{
@@ -79,19 +79,11 @@
             align-items: center;
 
             &-up{
-                height: 2rem;
-                margin-right: 1rem;
-                padding: 0.5rem;
-
-                background-color: transparent;
-                border-radius: 20px;
+                @include button-fs;
             }
             
-            &-down{
-                height: 2rem;
-                padding: 0.5rem;
-                background-color: transparent;
-                border-radius: 20px;
+            &-down{ 
+                @include button-fs;
             }
         }
     }
