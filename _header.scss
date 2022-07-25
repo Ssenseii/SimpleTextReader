@@ -68,6 +68,7 @@
     &__fontsize{
 
         padding-left: 1rem;
+        padding-bottom: 1rem;
 
         &-title{
             margin-bottom: 8px;
@@ -84,6 +85,39 @@
             
             &-down{ 
                 @include button-fs;
+            }
+        }
+    }
+
+    &__background{
+
+        padding-left: 1rem;
+        padding-bottom: 1rem;
+        
+        &-title{
+            margin-bottom: 8px;
+        }
+
+        &-button{
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+
+            &-white{
+                @include button-bc;
+                background-color: #fff;
+            }
+            &-black{
+                @include button-bc;
+                background-color: #000;
+            }
+            &-skin{
+                @include button-bc;
+                background-color: #ffe48c;
+            }
+            &-gray{
+                @include button-bc;
+                background-color: #969696;
             }
         }
     }

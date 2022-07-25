@@ -1,0 +1,23 @@
+@mixin button-fs {
+    height: 2rem;
+    margin-right: 1rem;
+    padding: 0.5rem;
+    background-color: transparent;
+    border-radius: 10px;
+
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+@mixin button-bc{
+    height: 2rem;
+    width: 2rem;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin-right: 8px;
+
+    &:hover{
+        cursor: pointer;
+    }
+}
