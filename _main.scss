@@ -4,16 +4,14 @@
     font-size: var(--fontsize);
     font-family: 'Public Sans', sans-serif;
     font-weight: 300;
-    text-align: left;
-    line-height: 32px;
-    
+    text-align: left;    
 }
 
 @media screen and (max-width: 1500px) {
     
     .main{
         padding: 10rem 10rem;
-        font-size: 32px;
+        font-size: 16px;
         line-height: 48px;
     }
 
@@ -23,7 +21,7 @@
     
     .main{
         padding: 3rem;
-        font-size: 16px;
+        font-size: 12px;
         line-height: 24px;
     }
 

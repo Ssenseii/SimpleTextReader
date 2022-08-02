@@ -38,6 +38,3 @@ function accessibility() {
 
 /// bg buttons
 
-function BGwhite(){
-    var 
-}
