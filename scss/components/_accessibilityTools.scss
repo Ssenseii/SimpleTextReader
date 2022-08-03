@@ -1,0 +1,58 @@
+.font{
+    &__small{
+        font-weight: bold;
+        font-size: 12px;
+    }
+
+    &__big{
+        font-weight: bold;
+        font-size: 18px;
+    }
+}
+
+.BG{
+    &__black{
+        background-color: #000;
+        color: #fff;
+    }
+
+    &__white{
+        background-color: #fff;
+        color: #000;
+    }
+
+    &__skin{
+        background-color: #eccf8b;
+    }
+
+    &__gray{
+        background-color: #777;
+        color: #fff;
+    }
+}
+
+.hamburgerline1{
+    width: 1rem;
+    height: 1px;
+    background-color: #969696;
+    
+    margin-left: 0.45rem;
+    margin-bottom: 2px;
+
+    &:first-child{
+        margin-top: 0.3rem;
+    }
+}
+
+.hamburgerline2{
+    width: 1rem;
+    height: 1px;
+    background-color: #969696;
+
+    margin-left: 0.45rem;
+    margin-bottom: 5px;
+
+    &:first-child{
+        margin-top: 0.45rem;
+    }
+}
