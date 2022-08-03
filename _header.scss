@@ -12,123 +12,8 @@
         margin-bottom: 6rem;
     }
 
-    &__access {
-
-        display: none;
-        width: 90%;
-        position: fixed;
-        margin-left: 2rem;
-        
-
-        &-button {
-            padding: 1rem;
-            width: 10rem;
-            position: relative;
-
-            
-
-            font-family: "Public Sans", sans-serif;
-            font-weight: 200;
-            font-size: 16px;
-
-            color: rgb(102, 102, 102);
-
-            background-color: white;
-            border: 1px solid rgb(102, 102, 102);;
-            border-radius: 20px;
-            margin-bottom: 1rem;
-
-            &:hover {
-                cursor: pointer;
-                font-weight: 400;
-                color: #000;
-                border: 1px solid #000;
-            }
-
-        }
-
-        &-content {
-            display: none;
-            position: absolute;
-            background-color: #fff;
-
-            border: 1px solid rgb(102, 102, 102);
-            border-radius: 20px;
-            
-            width: 16rem;
-            padding: 1rem;
-            z-index: 1;
-
-            font-family: "Public Sans", sans-serif;
-        }
-
-    }
 }
 
-.access{
-
-    
-    &__fontsize{
-
-        padding-left: 1rem;
-        padding-bottom: 1rem;
-
-        &-title{
-            margin-bottom: 8px;
-        }
-        
-        &-button{
-            display: flex;
-            flex-flow: row nowrap;
-            align-items: center;
-
-            &-up{
-                @include button-fs;
-            }
-            
-            &-down{ 
-                @include button-fs;
-            }
-        }
-    }
-
-    &__background{
-
-        padding-left: 1rem;
-        padding-bottom: 1rem;
-        
-        &-title{
-            margin-bottom: 8px;
-        }
-
-        &-button{
-            display: flex;
-            flex-flow: row nowrap;
-            align-items: center;
-
-            &-white{
-                @include button-bc;
-                background-color: #fff;
-            }
-            &-black{
-                @include button-bc;
-                background-color: #000;
-            }
-            &-skin{
-                @include button-bc;
-                background-color: #ffe48c;
-            }
-            &-gray{
-                @include button-bc;
-                background-color: #969696;
-            }
-        }
-    }
-}
-
-.show{
-    display: block;
-}
 
 .border {
     display: flex;
@@ -139,7 +24,7 @@
     &__line {
         width: 46rem;
         height: 2px;
-        background-color: black;
+        background-color: #969696;
     }
 }
 
@@ -152,6 +37,7 @@
 @media screen and (max-width: 700px) {
     .header__title {
         font-size: 48px;
+        text-align: center;
     }
 
     .border {
