@@ -41,7 +41,7 @@ closeBtn.addEventListener("click", function(){
 let fontSmall = document.getElementById("fontSmall");
 let fontBig = document.getElementById("fontBig");
 
-let fontSize = 16; 
+let fontSize = 24; 
 let main = document.getElementById("EntireText");
 
 fontBig.addEventListener("click", function(){
