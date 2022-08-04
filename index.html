@@ -35,15 +35,20 @@
         <link rel="stylesheet" href="dist/style.css" />
     </head>
     <body>
+
+        <div id="background"></div>
+
+
         <div id="progressBar"></div>
+
 
         <div style="display: none" id="accessBar" class="access">
             <button id="fontSmall" class="access__button font__small">A</button>
             <button id="fontBig" class="access__button font__big">A</button>
-            <button class="access__button BG__black">BG</button>
-            <button class="access__button BG__white">BG</button>
-            <button class="access__button BG__skin">BG</button>
-            <button class="access__button BG__gray">BG</button>
+            <button id="BGblack" class="access__button BG__black">BG</button>
+            <button id="BGwhite" class="access__button BG__white">BG</button>
+            <button id="BGskin" class="access__button BG__skin">BG</button>
+            <button id="BGgray" class="access__button BG__gray">BG</button>
             <button class="access__button lineheight__small">
                 <div class="hamburgerline1"></div>
                 <div class="hamburgerline1"></div>
@@ -80,8 +85,10 @@
             ></button>
         </div>
 
+        
+
         <header class="header">
-            <h1 class="header__title">Crimson Fading</h1>
+            <h1 id="headerTitle" class="header__title">Crimson Fading</h1>
         </header>
 
         <div class="border">

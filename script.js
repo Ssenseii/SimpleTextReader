@@ -40,7 +40,13 @@ closeBtn.addEventListener("click", function(){
 /// access buttons
 let fontSmall = document.getElementById("fontSmall");
 let fontBig = document.getElementById("fontBig");
+let BGblack = document.getElementById("BGblack");
+let BGwhite = document.getElementById("BGwhite");
+let BGskin = document.getElementById("BGskin");
+let BGgray = document.getElementById("BGgray");
 
+let background = document.getElementById("background");
+let headerTitle = document.getElementById("headerTitle");
 let main = document.getElementById("EntireText");
 let fontSize = 24; 
 
@@ -53,3 +59,29 @@ fontSmall.addEventListener("click", function(){
     main.style.setProperty("--fontsize", fontSize + "px");
     fontSize = fontSize - 2;
 })
+
+BGblack.addEventListener("click", function(){
+    background.style.backgroundColor = "#000";
+    main.style.color = "#fff"
+    headerTitle.style.color = "#fff"
+})
+
+BGwhite.addEventListener("click", function(){
+    background.style.backgroundColor = "#fff";
+    main.style.color = "#000"
+    headerTitle.style.color = "#000"
+})
+
+BGgray.addEventListener("click", function(){
+    background.style.backgroundColor = "#777";
+    main.style.color = "#fff"
+    headerTitle.style.color = "#fff"
+})
+
+BGskin.addEventListener("click", function(){
+    background.style.backgroundColor = "#eccf8b";
+    main.style.color = "#000"
+    headerTitle.style.color = "#000"
+})
+
+
