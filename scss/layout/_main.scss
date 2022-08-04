@@ -7,7 +7,7 @@
 }
 
 #EntireText{
-    font-size: var(--fontsize) px;
+    font-size: var(--fontsize);
 }
 
 .c0{
@@ -28,8 +28,11 @@
     
     .main{
         padding: 8rem 8rem;
-        font-size: $font-tablet;
         line-height: 1.75;
+    }
+
+    #EntireText{
+        font-size: $font-tablet;
     }
 
 }   
@@ -38,8 +41,11 @@
     
     .main{
         padding: 3rem;
-        font-size: $font-mobile;
         line-height: 24px;
+    }
+
+    #EntireText{
+        font-size: $font-mobile;
     }
 
 }   
