@@ -41,15 +41,15 @@ closeBtn.addEventListener("click", function(){
 let fontSmall = document.getElementById("fontSmall");
 let fontBig = document.getElementById("fontBig");
 
-let fontSize = 24; 
 let main = document.getElementById("EntireText");
+let fontSize = 24; 
 
 fontBig.addEventListener("click", function(){
     main.style.setProperty("--fontsize", fontSize + "px");
-    fontSize++;
+    fontSize = fontSize + 2;
 })
 
 fontSmall.addEventListener("click", function(){
     main.style.setProperty("--fontsize", fontSize + "px");
-    fontSize--;
+    fontSize = fontSize - 2;
 })
