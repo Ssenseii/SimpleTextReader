@@ -46,12 +46,22 @@ let BGskin = document.getElementById("BGskin");
 let BGgray = document.getElementById("BGgray");
 let lineHeightSmall = document.getElementById("lineHeightSmall");
 let lineHeightBig = document.getElementById("lineHeightBig");
+let font_TNR = document.getElementById("font_TNR");
+let font_U = document.getElementById("font_U");
+let font_M = document.getElementById("font_M");
+let font_PS = document.getElementById("font_PS");
 
 let background = document.getElementById("background");
 let headerTitle = document.getElementById("headerTitle");
 let main = document.getElementById("EntireText");
+
 let fontSize = 24; 
 let lineheight = 1.5;
+const TimesNewRoman = "Times New Roman";
+const Mont = "'Montserrat', sans-serif";
+const Ush = "'Uchen', serif";
+const PS = "'Public Sans', sans-serif";
+
 
 fontBig.addEventListener("click", function(){
     main.style.setProperty("--fontsize", fontSize + "px");
@@ -95,6 +105,22 @@ lineHeightSmall.addEventListener("click", function () {
 lineHeightBig.addEventListener("click", function () {
     main.style.setProperty("--lineheight", lineheight);
     lineheight = lineheight + 0.2;
+})
+
+font_TNR.addEventListener("click", function(){
+    main.style.setProperty("--fontfamily", TimesNewRoman);
+})
+
+font_U.addEventListener("click", function(){
+    main.style.setProperty("--fontfamily", Ush);
+})
+
+font_M.addEventListener("click", function(){
+    main.style.setProperty("--fontfamily", Mont);
+})
+
+font_PS.addEventListener("click", function(){
+    main.style.setProperty("--fontfamily", PS);
 })
 
 
