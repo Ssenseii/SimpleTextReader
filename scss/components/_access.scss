@@ -1,4 +1,5 @@
 .access {
+    // opacity: 0.05;
     border: 1px solid #000;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -12,6 +13,13 @@
     align-items: center;
 
     position: fixed;
+
+    transition: opacity 0.2s ease-in;
+
+    &:hover{
+        opacity: 1;
+        transition: opacity 0.2s ease-in;
+    }
 
     &__button {
         border: 1px solid #777;
@@ -30,7 +38,6 @@
 }
 
 .accessBtn {
-    display: none;
 
     position: fixed;
 
@@ -44,13 +51,26 @@
     background-color: transparent;
 }
 
+.closeBtn {
+
+    position: fixed;
+    border: 1px solid #f00;
+    border-radius: 10px;
+
+    width: 2rem;
+    height: 2rem;
+    margin: 2rem;
+
+    background-color: transparent;
+}
+
 @media screen and (max-width: 700px) {
-    .access {
-        display: none;
+    
+    .access{
+        z-index: 1;
     }
 
     .accessBtn {
-        display: block;
 
         &__bg {
             position: fixed;
@@ -61,16 +81,22 @@
             display: flex;
             flex-direction: center;
             align-items: center;
+
         }
+    }
+
+    .closeBtn{
+        left: 3rem;
     }
 }
 
 @media screen and (max-width: 1500px) {
-    .access {
-        display: none;
-    }
 
     .accessBtn {
-        display: block;
+        left: 3rem;
+    }
+    
+    .closeBtn{
+        left: 3rem;
     }
 }

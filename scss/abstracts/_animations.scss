@@ -1,0 +1,19 @@
+@keyframes reveal{
+    0%{
+        transform: translateX(-2rem);
+    }
+
+    100%{
+        transform: none;
+    }
+}
+
+@keyframes hideBar{
+    0%{
+        transform: none;
+    }
+
+    100%{
+        transform: translateX(-4rem);
+    }
+}
