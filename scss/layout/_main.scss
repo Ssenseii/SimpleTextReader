@@ -10,11 +10,13 @@
     font-family: 'Public Sans', sans-serif;
     font-weight: 200;
     text-align: left;
+    font-size: $fontsize;
     line-height: 1.5;
 }
 
 #EntireText{
     font-size: var(--fontsize);
+    line-height: var(--lineheight);
 }
 
 .c0{

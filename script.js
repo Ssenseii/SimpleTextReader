@@ -44,11 +44,14 @@ let BGblack = document.getElementById("BGblack");
 let BGwhite = document.getElementById("BGwhite");
 let BGskin = document.getElementById("BGskin");
 let BGgray = document.getElementById("BGgray");
+let lineHeightSmall = document.getElementById("lineHeightSmall");
+let lineHeightBig = document.getElementById("lineHeightBig");
 
 let background = document.getElementById("background");
 let headerTitle = document.getElementById("headerTitle");
 let main = document.getElementById("EntireText");
 let fontSize = 24; 
+let lineheight = 1.5;
 
 fontBig.addEventListener("click", function(){
     main.style.setProperty("--fontsize", fontSize + "px");
@@ -82,6 +85,16 @@ BGskin.addEventListener("click", function(){
     background.style.backgroundColor = "#eccf8b";
     main.style.color = "#000"
     headerTitle.style.color = "#000"
+})
+
+lineHeightSmall.addEventListener("click", function () {
+    main.style.setProperty("--lineheight", lineheight);
+    lineheight = lineheight - 0.2;
+})
+
+lineHeightBig.addEventListener("click", function () {
+    main.style.setProperty("--lineheight", lineheight);
+    lineheight = lineheight + 0.2;
 })
 
 
