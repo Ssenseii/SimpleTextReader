@@ -40,6 +40,7 @@
 .accessBtn {
 
     position: fixed;
+    left: 3rem;
 
     border: 1px solid #000;
     border-radius: 10px;
@@ -54,6 +55,8 @@
 .closeBtn {
 
     position: fixed;
+    left: 3rem;
+    
     border: 1px solid #f00;
     border-radius: 10px;
 
@@ -90,7 +93,7 @@
     }
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1800px) {
 
     .accessBtn {
         left: 3rem;

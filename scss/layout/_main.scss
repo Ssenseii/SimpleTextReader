@@ -1,12 +1,13 @@
 .main{
-    padding: 10rem 30rem;
-    --fontsize: 24px;
-    font-size: var(--fontsize);
+    padding: 10rem 20rem;
     font-family: 'Public Sans', sans-serif;
     font-weight: 200;
-    text-align: left;   
-    
+    text-align: left;
     line-height: 1.5;
+}
+
+#EntireText{
+    font-size: var(--fontsize) px;
 }
 
 .c0{
@@ -23,13 +24,12 @@
     padding-bottom: 2rem;
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1800px) {
     
     .main{
-        padding: 10rem 10rem;
-        font-size: 16px;
-        
-        line-height: 48px;
+        padding: 8rem 8rem;
+        font-size: $font-tablet;
+        line-height: 1.75;
     }
 
 }   
@@ -38,7 +38,7 @@
     
     .main{
         padding: 3rem;
-        font-size: 12px !important;
+        font-size: $font-mobile;
         line-height: 24px;
     }
 

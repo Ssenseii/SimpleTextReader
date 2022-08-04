@@ -35,3 +35,21 @@ closeBtn.addEventListener("click", function(){
         closeBtn.style.display = "none";
     }, 200);
 })
+
+
+/// access buttons
+let fontSmall = document.getElementById("fontSmall");
+let fontBig = document.getElementById("fontBig");
+
+let variable = 32; 
+let main = document.getElementById("EntireText");
+
+fontBig.addEventListener("click", function(){
+    main.style.setProperty("--fontsize", variable);
+    variable++;
+})
+
+fontSmall.addEventListener("click", function(){
+    main.style.setProperty("--fontsize", variable);
+    variable--;
+})
