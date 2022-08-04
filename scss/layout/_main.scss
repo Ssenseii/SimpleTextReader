@@ -3,8 +3,24 @@
     --fontsize: 24px;
     font-size: var(--fontsize);
     font-family: 'Public Sans', sans-serif;
-    font-weight: 300;
-    text-align: left;    
+    font-weight: 200;
+    text-align: left;   
+    
+    line-height: 1.5;
+}
+
+.c0{
+    font-weight: 400;
+    font-size: 30px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.c8{
+    font-weight: 400;
+    font-size: 30px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 @media screen and (max-width: 1500px) {
@@ -12,6 +28,7 @@
     .main{
         padding: 10rem 10rem;
         font-size: 16px;
+        
         line-height: 48px;
     }
 
