@@ -1,19 +1,29 @@
-@keyframes reveal{
-    0%{
+@keyframes reveal {
+    0% {
         transform: translateX(-2rem);
     }
 
-    100%{
+    100% {
         transform: none;
     }
 }
 
-@keyframes hideBar{
-    0%{
+@keyframes hideBar {
+    0% {
         transform: none;
     }
 
-    100%{
+    100% {
         transform: translateX(-4rem);
+    }
+}
+
+@keyframes pop {
+    0% {
+        transform: scale(0);
+    }
+
+    100%{
+        transform: scale(1);
     }
 }
