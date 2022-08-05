@@ -50,6 +50,7 @@ let font_TNR = document.getElementById("font_TNR");
 let font_U = document.getElementById("font_U");
 let font_M = document.getElementById("font_M");
 let font_PS = document.getElementById("font_PS");
+let reset = document.getElementById("reset");
 
 let background = document.getElementById("background");
 let headerTitle = document.getElementById("headerTitle");
@@ -123,4 +124,7 @@ font_PS.addEventListener("click", function(){
     main.style.setProperty("--fontfamily", PS);
 })
 
+reset.addEventListener("click", function(){
+    location.reload();
+})
 
