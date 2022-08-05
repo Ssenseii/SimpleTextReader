@@ -1,6 +1,6 @@
 .access {
-    // opacity: 0.05;
-    border: 1px solid #000;
+
+    border: 1px solid #aaa;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     background-color: #fff;
@@ -29,31 +29,39 @@
         width: 2rem;
         height: 2rem;
 
+        box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.75);
 
         &:hover{
             cursor: pointer;
             border: 1px solid #000;
+        }
+
+        &:active{
+            box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.75) inset;
         }
     }
 }
 
 .accessBtn {
 
+    opacity: 0.4;
     position: fixed;
     left: 3rem;
 
-    border: 1px solid #000;
+    border: 1px solid #aaa;
     border-radius: 10px;
 
     width: 2rem;
     height: 2rem;
     margin: 2rem;
 
-    background-color: #ccc;
+    background-color: transparent;
     animation: pop 0.2s ease-in-out;
+    transition: opacity 0.2s;
 
     &:hover{
         cursor: pointer;
+        opacity: 1;
     }
 }
 
@@ -70,6 +78,10 @@
     margin: 2rem;
 
     animation: pop 0.2s ease-in-out;
+
+    &:hover{
+        cursor: pointer;
+    }
 }
 
 @media screen and (max-width: 700px) {

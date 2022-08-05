@@ -75,8 +75,8 @@ fontSmall.addEventListener("click", function(){
 
 BGblack.addEventListener("click", function(){
     background.style.backgroundColor = "#000";
-    main.style.color = "#fff"
-    headerTitle.style.color = "#fff"
+    main.style.color = "#fff";
+    headerTitle.style.color = "#fff";
 })
 
 BGwhite.addEventListener("click", function(){
