@@ -10,8 +10,8 @@ justify-content: flex-end;
 .access {
 
     border: 1px solid #aaa;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
     background-color: #fff;
     width: 4rem;
     height: 100vh;
@@ -96,7 +96,8 @@ justify-content: flex-end;
 @media screen and (max-width: 700px) {
     
     .access{
-        z-index: 1;
+        position: fixed;
+        z-index: 1000;
         display: flex;
     }
 
@@ -105,28 +106,28 @@ justify-content: flex-end;
         &__bg {
             position: fixed;
             background-color: transparent;
-            width: 100%;
+            width: 80%; /// this is the dumbest solution I ever came up with
             height: 4rem;
 
             display: flex;
             flex-direction: center;
             align-items: center;
-
+            z-index: 1;
         }
     }
 
     .closeBtn{
-        left: 3rem;
+        right: 3rem;
     }
 }
 
 @media screen and (max-width: 1800px) {
 
     .accessBtn {
-        left: 3rem;
+        right: 3rem;
     }
     
     .closeBtn{
-        left: 3rem;
+        right: 3rem;
     }
 }

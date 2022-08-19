@@ -63,6 +63,8 @@ const Mont = "'Montserrat', sans-serif";
 const Ush = "'Uchen', serif";
 const PS = "'Public Sans', sans-serif";
 
+let border__line = document.getElementById("border__line")
+
 
 fontBig.addEventListener("click", function(){
     main.style.setProperty("--fontsize", fontSize + "px");
@@ -78,24 +80,28 @@ BGblack.addEventListener("click", function(){
     background.style.backgroundColor = "#000";
     main.style.color = "#fff";
     headerTitle.style.color = "#fff";
+    border__line.style.backgroundColor = "#fff";
 })
 
 BGwhite.addEventListener("click", function(){
     background.style.backgroundColor = "#fff";
     main.style.color = "#000"
     headerTitle.style.color = "#000"
+    border__line.style.backgroundColor = "#000";
 })
 
 BGgray.addEventListener("click", function(){
     background.style.backgroundColor = "#777";
     main.style.color = "#fff"
     headerTitle.style.color = "#fff"
+    border__line.style.backgroundColor = "#fff";
 })
 
 BGskin.addEventListener("click", function(){
     background.style.backgroundColor = "#eccf8b";
     main.style.color = "#000"
     headerTitle.style.color = "#000"
+    border__line.style.backgroundColor = "#000";
 })
 
 lineHeightSmall.addEventListener("click", function () {
